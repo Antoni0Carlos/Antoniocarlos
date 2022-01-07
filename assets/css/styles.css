@@ -126,8 +126,7 @@ body {
   margin: 0 0 var(--header-height) 0;
   font-family: var(--body-font);
   font-size: var(--normal-font-size);
-  /*background-color: var(--body-color);*/
-  background-color: black;
+  background-color: var(--body-color);
   color: var(--text-color);
 }
 
@@ -194,6 +193,15 @@ img {
   left: 0;
   z-index: var(--z-fixed);
   background-color: var(--body-color);
+  box-shadow: 1px#ccc;
+  /* border-bottom: solid 1px#ccc;*/
+}
+
+.header,
+.shadow {
+  -webkit-box-shadow: 0 3px 5px rgba(57, 63, 72, 0.178);
+  -moz-box-shadow: 0 3px 5px rgba(57, 63, 72, 0.178);
+  box-shadow: 0 3px 5px rgba(57, 63, 72, 0.178);
 }
 
 /*==================== NAV ====================*/
