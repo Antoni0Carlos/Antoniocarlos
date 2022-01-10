@@ -146,9 +146,67 @@ a {
   text-decoration: none;
 }
 
+a:hover {
+  color: #0a58ca;
+}
+
 img {
   max-width: 100%;
   height: auto;
+}
+label {
+  display: inline-block;
+}
+
+input,
+button,
+textarea {
+  margin: 0;
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+
+[role="button"] {
+  cursor: pointer;
+}
+
+button,
+[type="button"],
+[type="reset"],
+[type="submit"] {
+  -webkit-appearance: button;
+}
+button:not(:disabled),
+[type="button"]:not(:disabled),
+[type="reset"]:not(:disabled),
+[type="submit"]:not(:disabled) {
+  cursor: pointer;
+}
+
+::-moz-focus-inner {
+  padding: 0;
+  border-style: none;
+}
+
+textarea {
+  resize: vertical;
+}
+
+fieldset {
+  min-width: 0;
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+legend {
+  float: left;
+  width: 100%;
+  padding: 0;
+  margin-bottom: 0.5rem;
+  font-size: calc(1.275rem + 0.3vw);
+  line-height: inherit;
 }
 
 /*==================== REUSABLE CSS CLASSES ====================*/
@@ -820,7 +878,7 @@ img {
   flex-direction: row;
   align-items: center;
   justify-content: space-around;
-  height: auto;
+  min-height: 300px;
 }
 
 .footer-icon {
