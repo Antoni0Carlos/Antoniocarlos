@@ -4,8 +4,6 @@
   --header-height: 3rem;
 
   /*========== Colors ==========*/
-  /* Change favorite color */
-  --hue-color: 197; /*Purple 250 - Green 142 - Blue 230 - Pink 340*/
   /*
 primary rgb(87,185,224)
 font nav rgb(136,139,140)
@@ -25,6 +23,7 @@ subtitle rgb(106,140,192)
   --text-color-light: hsl(197, 8%, 65%);
   --input-color: hsl(197, 70%, 96%);
   --body-color: hsl(197, 60%, 99%);
+  --footer-color: hsl(197, 69%, 61%);
 
   /*========== Font and typography ==========*/
   --body-font: "Poppins", sans-serif;
@@ -87,6 +86,7 @@ body.dark-theme {
   --container-color: hsl(197, 29%, 16%);
   --input-color: hsl(197, 70%, 96%);
   --body-color: hsl(197, 29%, 16%);
+  --footer-color: hsl(197, 29%, 16%);
 }
 /*
 section.dark-theme {
@@ -532,7 +532,6 @@ legend {
 
 .portfolio__img {
   width: 265px;
-  border-radius: 0.5rem;
   justify-self: center;
 }
 
@@ -580,6 +579,39 @@ legend {
   height: 100%;
   object-fit: cover;
 }
+
+.swiper-button-prev::after,
+.swiper-button-next::after {
+  content: "";
+}
+
+.swiper-portfolio-icon {
+  font-size: 2rem;
+  color: var(--first-color);
+}
+
+.swiper-button-prev {
+  left: -1.5rem;
+}
+
+.swiper-button-next {
+  right: -1.5rem;
+}
+
+.swiper-container-horizontal > .swiper-pagination-bullets {
+  bottom: -2.5rem;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: var(--first-color);
+}
+
+.swiper-button-prev,
+.swiper-button-next,
+.swiper-pagination-bullet {
+  outline: none;
+}
+
 /*==================== PROJECT IN MIND ====================*/
 .project__mind__container {
   max-width: 100%;
@@ -592,7 +624,7 @@ legend {
 
 .project__content {
   max-width: 80%;
-  background-color: hsl(197, 57%, 53%);
+  background-color: var(--first-color);
   color: #fff;
   border-radius: 15px;
   margin-left: var(--mb-1-5);
@@ -642,7 +674,8 @@ legend {
 }
 
 .mind__button {
-  margin-bottom: var(--mb-1);
+  margin-bottom: var(--mb-0-5);
+  border: solid 1px #fff;
 }
 
 .project__img {
@@ -909,20 +942,20 @@ legend {
   margin-bottom: var(--mb-2);
 }
 
-.contact__btn-s {
+.contact__button {
   margin-top: var(--mb-0-75);
   margin-bottom: var(--mb-2);
   border: none;
 }
 
-.contact__btn-s:hover {
-  background-color: hsl(var(--hue-color), 57%, 53%);
+.contact__button:hover .button__icon {
+  transform: translateX(0.25rem);
 }
 
 /*==================== FOOTER ====================*/
 .footer {
-  background-color: var(--first-color);
-  color: rgb(255, 255, 255);
+  background-color: var(--footer-color);
+  color: #fff;
 }
 .footer__data {
   border-bottom: solid 1px #ccc;
@@ -935,7 +968,7 @@ legend {
 
 .footer-icon {
   font-size: 1.25rem;
-  color: rgb(255, 255, 255);
+  color: #fff;
 }
 
 .footer__social {
@@ -946,7 +979,7 @@ legend {
 
 .footer__social-icon {
   font-size: 1.25rem;
-  color: rgb(255, 255, 255);
+  color: #fff;
 }
 
 .footer__social-icon:hover {
@@ -962,11 +995,15 @@ legend {
 }
 
 .footer__logo {
-  color: rgb(255, 255, 255);
+  color: #fff;
 }
 
-.button__footer {
-  border: solid 1px rgb(255, 255, 255);
+.footer__button {
+  border: solid 1px #fff;
+}
+
+.footer__button:hover .button__icon {
+  transform: translateY(-0.25rem);
 }
 
 /*==================== MEDIA QUERIES ====================*/
