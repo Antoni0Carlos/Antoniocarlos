@@ -4,14 +4,7 @@
   --header-height: 3rem;
 
   /*========== Colors ==========*/
-  /*
-primary rgb(87,185,224)
-font nav rgb(136,139,140)
-dark rgb(29,46,53)
-body rgb(255,255,255)
-title rgb(35,40,41)
-subtitle rgb(106,140,192)
-*/
+
   /* HSL color mode */
 
   --first-color: hsl(197, 69%, 61%);
@@ -24,6 +17,7 @@ subtitle rgb(106,140,192)
   --input-color: hsl(197, 70%, 96%);
   --body-color: hsl(197, 60%, 99%);
   --footer-color: hsl(197, 69%, 61%);
+  --header-color: hsl(197, 60%, 99%);
 
   /*========== Font and typography ==========*/
   --body-font: "Poppins", sans-serif;
@@ -71,22 +65,16 @@ subtitle rgb(106,140,192)
   }
 }
 
-/*header rgb(17,17,17)*/
-/*home rgb(20,25,32)*/
-/*conteudo rgb(17,17,17)*/
-/*title*/
-/*subtitle o mesmo*/
-/*footer rgb(8,8,8)*/
-
 /*========== Variables Dark theme ==========*/
 body.dark-theme {
   --first-color-second: hsl(197, 69%, 61%);
   --title-color: hsl(187, 25%, 94%);
   --text-color: hsl(197, 8%, 45%);
-  --container-color: hsl(197, 29%, 16%);
+  /* --container-color: hsl(197, 29%, 16%);*/
   --input-color: hsl(197, 70%, 96%);
   --body-color: hsl(197, 29%, 16%);
-  --footer-color: hsl(197, 29%, 16%);
+  --footer-color: hsl(0, 0%, 3%);
+  --header-color: hsl(0, 0%, 7%);
 }
 /*
 section.dark-theme {
@@ -250,7 +238,7 @@ legend {
   position: fixed;
   left: 0;
   z-index: var(--z-fixed);
-  background-color: var(--body-color);
+  background-color: var(--header-color);
   box-shadow: 1px#ccc;
   /* border-bottom: solid 1px#ccc;*/
 }
@@ -379,7 +367,7 @@ legend {
 }
 
 .home__img {
-  width: 250px;
+  width: 240px;
   height: auto;
 }
 
@@ -671,7 +659,7 @@ legend {
 }
 
 .mind__button {
-  margin-bottom: var(--mb-0-5);
+  margin-bottom: var(--mb-1-5);
   border: solid 1px #fff;
 }
 
@@ -696,6 +684,7 @@ legend {
   display: flex;
   flex-direction: column;
 }
+
 .skills__content {
   width: 100%;
 }
