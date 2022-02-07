@@ -598,7 +598,7 @@ legend {
 }
 
 /*==================== PROJECT IN MIND ====================*/
-.project__mind__container {
+.banner__mind__container {
   max-width: 100%;
   margin-left: var(--mb-1-5);
   margin-right: var(--mb-1-5);
@@ -607,7 +607,7 @@ legend {
   align-items: center;
 }
 
-.project__content {
+.banner__content {
   max-width: 80%;
   background-color: var(--first-color);
   color: #fff;
@@ -619,7 +619,7 @@ legend {
   align-items: center;
 }
 
-.project__social {
+.banner__social {
   display: grid;
   grid-template-columns: max-content;
   row-gap: 1rem;
@@ -627,43 +627,43 @@ legend {
   margin-right: var(--mb-1-5);
 }
 
-.project__social-icon {
+.banner__social-icon {
   font-size: 1.25rem;
   color: #fff;
 }
 
-.project__social-icon:hover {
+.banner__social-icon:hover {
   color: var(--first-color-alt);
   transition: 3s;
 }
 
-.project__data {
+.banner__data {
   width: 80%;
   grid-column: 1/3;
 }
 
-.project__title {
+.banner__title {
   font-size: var(--big-font-size);
   color: #fff;
 }
 
-.project__subtitle {
+.banner__subtitle {
   font-size: var(--h3-font-size);
   font-weight: var(--font-medium);
   margin-bottom: var(--mb-0-75);
   color: #fff;
 }
 
-.project__description {
+.banner__description {
   margin-bottom: var(--mb-0-75);
 }
 
-.mind__button {
+.banner__button {
   margin-bottom: var(--mb-1-5);
   border: solid 1px #fff;
 }
 
-.project__img {
+.banner__img {
   width: 35%;
   height: auto;
   margin-left: var(--mb-1-5);
