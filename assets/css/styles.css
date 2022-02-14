@@ -608,10 +608,10 @@ legend {
 }
 
 .banner__content {
+  max-height: 300px;
   max-width: 80%;
   background-color: var(--first-color);
   color: #fff;
-  border-radius: 15px;
   margin-left: var(--mb-1-5);
   margin-right: var(--mb-1-5);
   grid-template-columns: 0.5fr 3fr;
@@ -664,8 +664,14 @@ legend {
 }
 
 .banner__img {
-  width: 35%;
-  height: auto;
+  background-color: #fff;
+  border-radius: 60%;
+  width: 410px;
+  height: 220px;
+  background-image: url(/assets/img/home-img.png);
+  background-size: 100%;
+  background-position: 0px 8px;
+  background-repeat: no-repeat;
   margin-left: var(--mb-1-5);
   margin-right: var(--mb-1-5);
 }
