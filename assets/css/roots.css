@@ -1,4 +1,21 @@
 /*==================== MEDIA QUERIES ====================*/
+@media (max-width: 425px) {
+  .container {
+    max-width: 424px;
+  }
+  .home__container {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+  }
+  .home__img {
+    order: -3;
+    margin-left: 5rem;
+  }
+}
+
 /* For small devices */
 @media (min-width: 576px) {
   .container {
