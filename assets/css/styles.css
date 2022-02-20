@@ -668,10 +668,6 @@ legend {
   border-radius: 60%;
   width: 410px;
   height: 220px;
-  background-image: url(/assets/img/home-img.png);
-  background-size: 100%;
-  background-position: 0px 8px;
-  background-repeat: no-repeat;
   margin-left: var(--mb-1-5);
   margin-right: var(--mb-1-5);
 }
@@ -821,15 +817,14 @@ legend {
   margin-left: var(--mb-1-5);
   margin-right: var(--mb-1-5);
 }
-.services__container {
-  gap: 1.5rem;
-  grid-template-columns: repeat(2, 1fr);
-}
 
 .services__content {
+  width: 25rem;
+  height: 20rem;
+  text-align: center;
   position: relative;
   background-color: var(--container-color);
-  padding: 4.5rem 2.5rem 3.25rem 2.5rem;
+  padding-top: var(--mb-2);
   border-radius: 0.25rem;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
   transition: 0.3s;

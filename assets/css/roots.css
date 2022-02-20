@@ -79,23 +79,43 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
     margin-left: var(--mb-2);
     margin-right: var(--mb-2);
   }
   .banner__content {
+    max-height: 100%;
     width: 100%;
     display: flex;
-    background-color: var(--first-color);
-    color: #fff;
-    margin-left: var(--mb-1-5);
-    margin-right: var(--mb-1-5);
-    grid-template-columns: 0.5fr 3fr;
-    padding-top: 3.5rem;
-    align-items: center;
   }
   .banner__img {
-    display: none;
+    height: 50%;
+    max-width: 45%;
+    margin-top: var(--mb-1-5);
+  }
+  .banner__img img {
+    margin-bottom: -8px;
+  }
+  /*====Skills page====*/
+  .skills {
+    margin-left: var(--mb-3);
+  }
+  .skills__container {
+    width: 100vw;
+  }
+  /*====Services page====*/
+  .services {
+    margin-left: 3rem;
+  }
+  .services__title {
+    text-align: center;
+  }
+  .services__container {
+    display: flex;
+    flex-direction: column;
+  }
+  .services__content {
+    width: 18rem;
+    height: 18rem;
   }
 }
 
