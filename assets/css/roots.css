@@ -1,18 +1,23 @@
 /*==================== MEDIA QUERIES ====================*/
+/*==================== For small devices ====================*/
 @media (max-width: 425px) {
   .container {
     max-width: 424px;
   }
-  /*====Home page====*/
-  .home__container {
+  .home__container,
+  .about__container,
+  .portfolio__container,
+  .banner__mind__container,
+  .services__container {
     width: 100%;
     display: flex;
     flex-direction: column;
     align-self: center;
     text-align: center;
-    margin-left: var(--mb-2);
-    margin-right: var(--mb-2);
+    margin-left: var(--mb-1-5);
+    margin-right: var(--mb-1-5);
   }
+  /*====Home page====*/
   .home__content {
     display: flex;
     flex-direction: column;
@@ -46,16 +51,6 @@
     margin-left: var(--mb-2);
     margin-right: var(--mb-2);
   }
-  .about__container {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    margin-left: var(--mb-1-5);
-    margin-right: var(--mb-1-5);
-  }
   .about__data {
     width: 100%;
   }
@@ -63,25 +58,10 @@
     width: 100%;
   }
   /*====Portfolio page====*/
-  .portfolio__container {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
-    margin-left: var(--mb-2);
-    margin-right: var(--mb-2);
+  .swiper-portfolio-icon {
+    display: none;
   }
   /*====Banner page====*/
-
-  .banner__mind__container {
-    width: 100vw;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin-left: var(--mb-2);
-    margin-right: var(--mb-2);
-  }
   .banner__content {
     max-height: 100%;
     width: 100%;
@@ -109,23 +89,103 @@
   .services__title {
     text-align: center;
   }
-  .services__container {
-    display: flex;
-    flex-direction: column;
-  }
   .services__content {
     width: 18rem;
     height: 18rem;
   }
-}
+  /*====Contact page====*/
+  .contact__container {
+    width: 100%;
+    margin-left: var(--mb-1);
+    margin-right: var(--mb-1-5);
+  }
+  .row {
+    width: 90vw;
+  }
+  /*====Footer page====*/
+  .footer {
+    width: 112%;
+    margin: 0;
+    padding: 0;
+  }
+  .footer__container {
+    max-width: 100vw;
+  }
 
-/* For small devices */
+  .footer__subtitle {
+    font-size: var(--h2-font-size);
+    color: #fff;
+  }
+
+  .footer__data {
+    border-bottom: solid 1px #ccc;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    min-height: 300px;
+  }
+
+  .footer__link {
+    display: grid;
+    row-gap: 1rem;
+  }
+
+  .footer__social {
+    display: grid;
+    row-gap: 1rem;
+  }
+
+  .footer__icon {
+    font-size: 1.25rem;
+    color: #fff;
+  }
+
+  .footer__icon:hover {
+    transition: 0.5s;
+  }
+
+  .footer--span {
+    font-size: var(--normal-font-size);
+    margin-left: var(--mb-0-5);
+  }
+
+  .footer__button {
+    border: solid 1px #fff;
+  }
+
+  .footer__button:hover .button__icon {
+    transform: translateY(-0.25rem);
+  }
+
+  .footer__Copyrigh {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: var(--mb-2-5);
+  }
+
+  .footer__nav .footer__nav--list {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: var(--mb-1);
+  }
+
+  .footer__social--icon {
+    font-size: 1.25rem;
+    border: solid 1px #fff;
+    border-radius: 15%;
+    color: #fff;
+    padding: 0.5px 4px;
+  }
+}
 @media (min-width: 576px) {
   .container {
     max-width: 540px;
   }
 }
-
+/*==================== For medium devices ====================*/
 @media (min-width: 768px) {
   .container {
     max-width: 715px;
@@ -135,7 +195,6 @@
     display: none;
   }
 }
-
 @media (max-width: 769px) {
   /*====Portfolio====*/
   .portfolio__data {
@@ -172,15 +231,13 @@
     margin-top: var(--mb-1-5);
   }
 }
-
-/* For medium devices */
 @media (min-width: 992px) {
   .container {
     max-width: 960px;
   }
 }
 
-/* For large devices */
+/*==================== For full devices ====================*/
 
 @media (min-width: 1200px) {
   .container {
@@ -213,6 +270,7 @@
     --bs-gutter-x: 1.5rem;
     --bs-gutter-y: 0;
     display: flex;
+    justify-content: center;
     flex-wrap: wrap;
     margin-top: calc(-1 * var(--bs-gutter-y));
     margin-right: calc(-0.5 * var(--bs-gutter-x));
@@ -221,7 +279,7 @@
 
   .row > * {
     flex-shrink: 0;
-    width: 100%;
+    width: 80%;
     max-width: 100%;
     padding-right: calc(var(--bs-gutter-x) * 0.5);
     padding-left: calc(var(--bs-gutter-x) * 0.5);
