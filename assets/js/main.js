@@ -27,39 +27,6 @@ function linkAction() {
     navMenu.classList(n => n.addEventListener('click', linkAction))
 }
 
-/*==================== ACCORDION SKILLS ====================*/
-/*const skillsContent = document.getElementByClassName('skills__content'),
-    skillsHeader = document.querySelectorAll('.skills__header')
-
-function toggleSkills() {
-    let itemClass = this.parentNode.ClassName
-
-    for (i = 0; i < skillsContent.length; i++) {
-        skillsContent[i].className = 'skills__content skills__close'
-    }
-    if (itemClass === 'skills__content skills__close') {
-        this.parentNode.className = 'skills__content skills__open'
-    }
-}
-
-skillsHeader.forEach((el) => {
-    el.addEventListener('click', toggleSkills)
-})
-*/
-/*==================== SERVICES MODAL ====================*/
-const modalViews = document.querySelectorAll('.services__modal'),
-    modalBtns = document.querySelectorAll('.services__button'),
-    modalCloses = document.querySelectorAll('.services__modal-close')
-
-let modal = function (modalClick) {
-    modalViews[modalClick].classList.add('.active-modal ')
-}
-
-modalBtns.forEach((modalBtn, i) => {
-    modalBtn.addEventListener('click', () => {
-        modal(i)
-    })
-})
 /*==================== PORTFOLIO ====================*/
 let swiper = new Swiper(".portfolio__container", {
     cssMode: true,
@@ -72,21 +39,7 @@ let swiper = new Swiper(".portfolio__container", {
       el: ".swiper-pagination",
       clickable: true,
     },
-    /*
-    mousewheel: true,
-    keyboard: true,*/
   });
-/*==================== TESTIMONIAL ====================*/
-
-
-/*==================== SCROLL SECTIONS ACTIVE LINK ====================*/
-
-
-/*==================== CHANGE BACKGROUND HEADER ====================*/
-
-
-/*==================== SHOW SCROLL UP ====================*/
-
 
 /*==================== DARK LIGHT THEME ====================*/
 const themeButton = document.getElementById('theme-button');
