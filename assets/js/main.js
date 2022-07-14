@@ -69,4 +69,10 @@ themeButton.addEventListener('click', () =>{
     // We save the theme and the current icon that the user chose
     localStorage.setItem('selected-theme', getCurrentTheme())
     localStorage.setItem('selected-icon', getCurrentIcon())
-})
+});
+
+// Activating go up button. With the active class
+window.addEventListener('scroll', function() {
+    let scroll = document.querySelector('.footer__button');
+        scroll.classList.toggle('active', window.scrollY > 150)
+});

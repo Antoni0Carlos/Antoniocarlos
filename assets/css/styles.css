@@ -1047,7 +1047,10 @@ top: 0;
   border: solid 1px #fff;
   padding: 0.25rem 0.5rem;
   text-align: center;
-  z-index: 100;
+  z-index: 1000;
+  cursor: pointer;
+  opacity: 0;
+  visibility: hidden;
 }
 
 .button__footer--icon {
@@ -1057,4 +1060,59 @@ top: 0;
 
 .footer__button:hover .button__footer--icon {
   transform: translateY(-0.25rem);
+}
+
+
+.active{
+  opacity: 1;
+  visibility: visible;
+  animation: btnUp 2s ease 0s 1 normal forwards;
+}
+
+
+@keyframes btnUp {
+	0% {
+		animation-timing-function: ease-in;
+		opacity: 1;
+		transform: translateX(48px);
+	}
+
+	24% {
+		opacity: 1;
+	}
+
+	40% {
+		animation-timing-function: ease-in;
+		transform: translateX(26px);
+	}
+
+	65% {
+		animation-timing-function: ease-in;
+		transform: translateX(13px);
+	}
+
+	82% {
+		animation-timing-function: ease-in;
+		transform: translateX(6.5px);
+	}
+
+	93% {
+		animation-timing-function: ease-in;
+		transform: translateX(4px);
+	}
+
+	25%,
+	55%,
+	75%,
+	87%,
+	98% {
+		animation-timing-function: ease-out;
+		transform: translateX(0px);
+	}
+
+	100% {
+		animation-timing-function: ease-out;
+		opacity: 1;
+		transform: translateX(0px);
+	}
 }
